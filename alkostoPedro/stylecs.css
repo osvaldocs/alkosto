@@ -1,0 +1,45 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    background-color: #004797;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 480px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
