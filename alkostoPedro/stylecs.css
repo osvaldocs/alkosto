@@ -1,5 +1,9 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body, html {
@@ -125,8 +129,10 @@ nav ul a {
     align-items: stretch;
 }
 
-.section1-container > img {
+.section1-container > a > img {
     flex: 0 1 300px;
+    width: 100%;
+   
 }
 
 .grid-container1 {
@@ -161,4 +167,24 @@ nav ul a {
 }
 
 
+@media (max-width: 480px) {
+    nav ul {
+        display: block;
+    }
 
+    .section1-container > a img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section1-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
