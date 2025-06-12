@@ -1,4 +1,6 @@
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body, html {
     margin: 0;
@@ -112,10 +114,51 @@ nav ul a {
 }
 
 .span-text {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+.section1-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0;
+    align-items: stretch;
+}
+
+.section1-container > img {
+    flex: 0 1 300px;
 }
 
 .grid-container1 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    background-color: rgb(231, 229, 229);
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
 }
+
+.grid-container1 a {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.grid-container1 a img {
+    width: 4rem;
+}
+
+.grid-container1 a span {
+    line-height: 1;
+    overflow-wrap: break-word;
+}
+
+
+
