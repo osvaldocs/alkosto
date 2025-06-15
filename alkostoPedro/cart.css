@@ -41,8 +41,15 @@ nav ul {
 nav ul li {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
+
+.navul-container li::after {
+  content: "|";
+  margin: 0 0 0 0.8rem;
+  color: #004797;
+}
+
 nav ul a {
     display: flex;
     text-decoration: none;
@@ -114,3 +121,4 @@ nav ul a {
 .span-text {
     font-size: 0.9rem;
 }
+
