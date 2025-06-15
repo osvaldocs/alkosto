@@ -50,10 +50,11 @@
         align-items: center;
         font-size: 1.2rem;
     }
-    nav ul a {
+    nav ul li a {
         display: flex;
         text-decoration: none;
         color: white;
+        font-size: 14px;
     }
 
 
@@ -100,7 +101,7 @@
     }
 
     .navul-container ul li a {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         transition: 0.3s;
 
     }
@@ -202,13 +203,15 @@
         color: gray;
         padding: 1rem 10rem;
         text-align: center;
+        font-size: 12px;
     }
 
     footer span {
         color: white;
-        font-size: 20px;
+        font-size: 16px;
     }
 
+   
     .footer-item1 {
     width: 100%;      
     display: grid;
